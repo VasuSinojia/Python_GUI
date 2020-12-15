@@ -1,0 +1,13 @@
+from tkinter import *
+
+vasu_root = Tk()
+
+# vasu_root.wm_geometry
+# in tkinter  in .png images can run
+# to run .jpg image we have to install PIL
+Photo = PhotoImage(file="1.png.jpg")
+
+vasu_label = Label(image=Photo)
+vasu_label.pack()
+
+vasu_root.mainloop()
