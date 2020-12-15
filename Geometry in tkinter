@@ -1,0 +1,15 @@
+from tkinter import *
+
+vasusin_root = Tk()
+
+vasusin_root.geometry("756x987")
+
+#width, height
+vasusin_root.minsize(300,100)
+
+#width, height
+vasusin_root.maxsize(700,500)
+
+vasu = Label(text="vasu is a good boy and this is his GUI")
+vasu.pack()
+vasusin_root.mainloop()
