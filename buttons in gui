@@ -1,0 +1,33 @@
+from tkinter import *
+
+root = Tk()
+root.geometry("377x577")
+
+def mihir():
+    print("Mihir is a gamer")
+
+def vasu():
+    print("vasu is an actor")
+
+def abhishek():
+    print("abhishek is a DOP")
+
+def nikunj():
+    print("Nikunj is an editor")
+
+frame = Frame(root, borderwidth=8, bg="grey", relief=SUNKEN)
+frame.pack()
+
+b1= Button(frame, fg="red", text="mihir", command=mihir)
+b1.pack()
+
+b2= Button(frame, fg="red", text="vasu", command=vasu)
+b2.pack()
+
+b3= Button(frame, fg="red", text="abhishek", command=abhishek)
+b3.pack()
+
+b4= Button(frame, fg="red", text="nikunj", command=nikunj)
+b4.pack()
+
+root.mainloop()
