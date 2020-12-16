@@ -1,0 +1,28 @@
+from tkinter import *
+
+def getvals():
+    print(uservalue.get())
+    print(passwordvalue.get())
+
+root=Tk()
+root.geometry("423x321")
+
+user = Label(root, text="Username")
+password = Label(root, text="Password")
+
+user.grid()   # pack and grid have the same function to pack the label
+password.grid()        # in grid we can give attributes(row=, column=)
+
+# variable classes in tkinter
+# booleanvar, doublevar, stringvar, intvar
+
+uservalue= StringVar()
+passwordvalue = StringVar()
+
+userentry= Entry(root, textvariable=uservalue)
+passwordentry = Entry(root, textvariable=passwordvalue)
+
+userentry.grid(row=0, column=1)
+passwordentry.grid(row=0, column=1)
+
+root.mainloop()
