@@ -1,0 +1,17 @@
+from tkinter import *
+
+# we have to give an argument to the function i.e. event
+def vasu(event):
+    print(f"You clicked the Button at {event.x}, {event.y}")
+
+root = Tk()
+root.title("Events in Tkinter")
+root.geometry("456x365")
+
+widget= Button(root, text= "Click on Me")
+widget.pack()
+
+widget.bind("<Button-1>", vasu)
+
+
+root.mainloop()
