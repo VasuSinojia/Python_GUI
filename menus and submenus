@@ -1,0 +1,23 @@
+from tkinter import *
+
+root = Tk()
+
+root.geometry("456x324")
+root.title("Vasu`s Notepad")
+
+def myfunc():
+    print("Main ek bohat hi natkhat aur shaitaan function huu")
+
+mainmenu = Menu(root)
+
+m1 = Menu(mainmenu, tearoff=0)  # tearoff will disable the dotted line
+m1.add_command(label="New Project", command=myfunc)
+m1.add_command(label="Save", command=myfunc)
+m1.add_command(label="Save As", command=myfunc)
+m1.add_separator()    # this will separate the submenus by a line
+m1.add_command(label="Print", command=myfunc)
+m1.add_command(label="File", command=myfunc)
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="File", menu=m1)
+
+root.mainloop()
